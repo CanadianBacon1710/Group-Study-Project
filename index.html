@@ -3,77 +3,162 @@
 <html lang="en">
 
 <head>
-  <title>Would you rather have</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <title>The Game Directory</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet'>
+    <style>
+    .header {
+        font-family: 'Fjalla One';font-size: 22px;
+    }
+
+    .dark .header h1 {
+        font-family: 'Josefin Slab';font-size: 66px; 
+            
+    }
+    </style>
 </head>
 
 <body>
 
   <div class="header">
     <!-- could be page title or banner -->
-    <h1>games. unlimited games.</h1>
-    <p>but no bacon</p>
+    <h1>// The Game Directory //</h1>
+    <h2>All the games you need. At your fingertips.</h2>
   </div>
 
 
   <!-- navigation bar to link internal web pages -->
   <div class="topnav">
-    <a href="index.html">HOME</a>
-    <a href="anotherpage.html">ANOTHER PAGE</a>
-    <a href="#">Link</a>
-    <a href="#" style="float:right">Link</a>
+    <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>HOME</a>
+    <a href="directory.html"><i class="fa fa-fw fa-gamepad"></i> GAME DIRECTORY</a>
+    <a href="reviews.html"><i class="fa fa-fw fa-edit"></i>REVIEWS</a>
+    <button class="navbar__btn" id="dark-mode-button" onclick="toggleDarkMode()">
+            🌞 Light Mode
+          </button>
+    <script src="script.js"></script>
+    <a href="https://store.steampowered.com/" style="float:right"><i class="fa fa-fw fa-steam"></i>STEAM</a>
   </div>
-
+  
+  <!--https://dev.to/ziratsu/switch-to-a-darker-image-when-on-dark-mode-2lkh#:~:text=You%20can%20create%20an%20empty,a%20background%20of%20this%20div.&text=However%2C%20you%20then%20need%20to,and%20not%20the%20lighter%20image.-->
 
     <div class="row">
     <!-- left side/column -->
     <div class="leftcolumn">
       
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Wa-hoo</p>
-        <p>...</p>
+      <div class="cardi">
+        <h1>| Skrunkle Game Directory |</h1>
+          <h5>[Skrunkle Games]</h5>
+        
+          <img src="https://media.istockphoto.com/id/1334436084/photo/top-down-view-of-colorful-illuminated-gaming-accessories-laying-on-table.jpg?s=612x612&w=0&k=20&c=E9xnbAZoBS5LlUX0q-zxT_3m6gEZpyB2k51_U4LLMNs=">
+        <p>Currently debating your next game purchase? Looking for a fun game to play with friends? Look no further than The Game Directory! We offer insight to plenty of popular games right now. From the most engaging FPS games to the most immersive RPGs, you'll be sure to find your new favourite game right here!</p>
+        
       </div>
       
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>...</p>
+      <div class="cardi">
+        <h1>| Why Do We Operate? |</h1>
+        <h5>[Skrunkle Games]</h5>
+        <img src= "https://media.istockphoto.com/id/1305224036/photo/latin-man-gaming-on-his-pc-during-a-live-stream.jpg?s=612x612&w=0&k=20&c=m44oOlCqEgFs5MyLzz5zSr21kNmFbteOg0c6-ETNWSI=">
+        <p>We operate to give users helpful insight and suggestions for video games and provide endless hours of fun and enjoyment through the many games we share with users on our website. We do this as we relate to not being able to find that one game that feels just right, and the loss of time spent looking for the right one to play. Our directory cuts out all of the unnecessary time that would be spent looking for a game to play and provides users with hours of fun, all services being completely free! </p>
+        
       </div>
+
+
+        <div class="card">
+            <style>
+
+                  .card img:hover {
+
+                  transform:scale(1.03);
+              </style>
+            <h1>| POPULAR CONSOLES |</h1>
+            <h5>[Consoles to purchase]</h5>
+            <h2>PLAYSTATION 5</h2>
+            <h5>Sony</h5>
+            <a href="https://www.playstation.com/en-ca/"><img src="https://cdn.mos.cms.futurecdn.net/HkdMToxijoHfz4JwUgfh3G-1200-80.jpg" style="height:400px; width:600px";></a>
+            <br>
+            <h2>XBOX SERIES X & S</h2>
+            <h5>Microsoft</h5>
+            <a href="https://www.xbox.com/en-CA"><img src="https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt82a4a09b6ca39c87/63b49e71f2b81c35b49b04cb/vg-evergreen-feature-fg-xbox-series-x-s-orientation-m.png?width=150p&quality=80&auto=webp" style="height:400px; width:600px";></a>
+            <br>
+            <h2>NINTENDO SWITCH</h2>
+            <h5>Nintendo</h5>
+            <a href="https://www.nintendo.com/en-ca/switch/"><img src="https://assets1.ignimgs.com/2017/03/01/switch-1280-1488354978508_160w.jpg?width=1280" style="height:400px; width:600px";></a>
+            <br>
+            <h2>STEAM DECK (OLED)</h2>
+            <h5>Valve</h5>
+            <a href="https://www.steamdeck.com/en/oled"><img src="https://www.pcworld.com/wp-content/uploads/2023/11/Steam-Deck-OLED-screen.jpg?quality=50&strip=all" style="height:400px; width:600px";></a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+          </div>
     </div>
 
     <!-- right side/column --> 
     <div class="rightcolumn">
       <div class="card">
-        <h2>About Me</h2>
-        <div class="fakeimg" style="height:100px;">Image</div>
-        <p>...</p>
+        <h2>About Us</h2>
+        
+          <a href="https://replit.com/@DanielMullaney/Group-Study-Project"><img src="images/COMPANY2.png"></a>
+        <p>Who are we?. We at SkrunkleCode are a gaming company originally founded in 2010, Our company finds the most popular games of each week and we put them all in one place so people can check them out or even experience them.</p>
       </div>
+        <div class="card">
+            <h2 style=font-weight: bold;>| FEATURED |</h2>
+            <a href="https://store.steampowered.com/app/1240440/Halo_Infinite/"><img src= "https://upload.wikimedia.org/wikipedia/en/1/14/Halo_Infinite.png"></a>
+            <a href="https://store.steampowered.com/app/1966720/Lethal_Company/"><img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtNPgf6_QTuwbehkNRujKHWLGsk7NXbCq4NsEHZWxuEaPvGcUMHI6bK7tG2CgpjIWTtNc&usqp=CAU"style=width:280px></a>
+              <a href="https://store.steampowered.com/app/42700/Call_of_Duty_Black_Ops/"><img src= "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/CoD_Black_Ops_cover.png/220px-CoD_Black_Ops_cover.png"style=width:280px;></a>
+            <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/"><img src="https://upload.wikimedia.org/wikipedia/en/1/12/Baldur%27s_Gate_3_cover_art.jpg"style=width:280px></a>
+            <a href="https://store.steampowered.com/app/220/HalfLife_2/"><img src="https://upload.wikimedia.org/wikipedia/en/2/25/Half-Life_2_cover.jpg"style=width:280px></a>
+            <a href="https://store.steampowered.com/app/1962660/Call_of_Duty_Modern_Warfare_II/"><img src="https://m.media-amazon.com/images/M/MV5BMjZjODM2MDMtMGE2ZS00NWIyLTkzOWMtYjY0YTM3MzQ0ZjMzXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg"style=width:280px></a>
+          </div>
       <div class="card">
-        <h3>Popular Post</h3>
-        <div class="fakeimg"><p>Image</p></div>
-        <div class="fakeimg"><p>Image</p></div>
-        <div class="fakeimg"><p>Image</p></div>
+          <h3>Developers</h3>
+          <p>Ava Jessup, Daniel Mullaney, Liam Robb, Ryan Booker</p>
+          <p>Courtice Secondary School</p>
       </div>
-      <div class="card">
-        <h3>Follow Me</h3>
-        <p>Some text..</p>
-      </div>
+
+        <div class="card">
+            <h3>Notes</h3>
+            <p>All reviews are from various videos from creators on YouTube, all credit goes to the respective creators on YouTube.</p>
+              <p>Courtice Secondary School</p>
+          </div>
+        <div class="card">
+            <h3>Gaming News Sources</h3>
+            <p><a href="https://www.gamespot.com/">Gamespot</a>
+            <br>
+            <a href="https://gamerant.com/">Gamerant</a>
+                <br>
+            <a href="https://www.ign.com/ca">IGN</a>
+                <br>
+            <a href="https://kotaku.com/">Kotaku</a></p>
+
+          </div>
     </div>
   </div>
 
 
   <!-- bottom -->
   <div class="footer">
-    <h2>Footer</h2>
+    <p>| Powered by Replit |</p>
   </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
 
 
   

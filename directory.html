@@ -1,0 +1,185 @@
+<!-- From W3 Schools https://www.w3schools.com/css/css_website_layout.asp -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <title>SkrunkleCode Game Directory</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet'>
+    
+
+    <style>
+    .header {
+        font-family: 'Fjalla One';font-size: 22px;
+    }
+
+    .dark .header h1 {
+        font-family: 'Josefin Slab';font-size: 66px; 
+
+    }
+    </style>
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class="header">
+    <!-- could be page title or banner -->
+      <h1>| Directory |</h1>
+      <h2> ---------// WEEKLY GAMES //---------  </h2>
+  </div>
+
+
+  <!-- navigation bar to link internal web pages -->
+  <div class="topnav">
+    <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>HOME</a>
+    <a href="directory.html"><i class="fa fa-fw fa-gamepad"></i> GAME DIRECTORY</a>
+      <a href="reviews.html"><i class="fa fa-fw fa-edit"></i>REVIEWS</a>
+    <button class="navbar__btn" id="dark-mode-button" onclick="toggleDarkMode()">
+      🌞 Light Mode
+    </button>
+      <a href="https://store.steampowered.com/" style="float:right"><i class="fa fa-fw fa-steam"></i>STEAM</a>
+  </div>
+
+
+    <div class="row">
+    <!-- left side/column -->
+    <div class="leftcolumn">
+      <style>
+
+          .card img:hover {
+
+          transform:scale(1.03);
+      </style>
+      <div class="card">
+        <h1>| HOT RIGHT NOW: HORROR |</h1>
+        <h5>[Jan 14, 2024]
+        <br>
+        Click on the Images to Access</h5>
+        <h2>LETHAL COMPANY</h2>
+        <a href="https://store.steampowered.com/app/1966720/Lethal_Company/"><img src="https://www.thegamecrater.com/wp-content/uploads/2023/11/Lethal-Company-Max-Players_-How-Many-People-Can-Play_.jpg" style="height:300px; width:600px";></a>
+        <p>About This Game:
+            
+            You are a contracted worker for the Company. Your job is to collect scrap from abandoned, industrialized moons to meet the Company's profit quota. You can use the cash you earn to travel to new moons with higher risks and rewards--or you can buy fancy suits and decorations for your ship <a href="https://store.steampowered.com/">(Steam)</a>[Available on PC].</p>
+          
+        <p>Developed by Zeekerss</p>
+      </div>
+      
+      <div class="card">
+        <h1>| HOT RIGHT NOW: RPG |</h1>
+        <h5>[Jan 15, 2024]</h5>
+        <h2>BALDUR'S GATE 3</h2>
+        <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/"><img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-10/231024-astarion-main-ksp-ee1bad.jpg" style="height:300px; width:600px";></a>
+        <p>About This Game:
+            
+            Baldur's Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons & Dragons, where your choices shape a tale of fellowship and betrayal, survival and sacrifice, and the lure of absolute power <a href="https://store.steampowered.com/">(Steam)</a>[Available on PC & Consoles].</p>
+        <p>Developed by <a href="https://larian.com/">Larian Studios</a></p>
+          
+      </div>
+
+
+        <div class="card">
+            <h1>| OLDIE BUT A GOODIE |</h1>
+            <h5>[Jan 16, 2024]</h5>
+            <h2>HALF-LIFE 2</h2>
+            <a href="https://store.steampowered.com/app/220/HalfLife_2/"><img src="https://editors.dexerto.com/wp-content/uploads/2022/08/05/half-life-2-key-art-header.jpg" style="height:350px; width:600px";></a>
+            <p>About This Game:
+
+                Former Black Mesa Scientist Gordon Freeman is forceably thrusted into the now dystopian planet to secure the survival of the ever-so diminishing human species. With the help of such allies as Alyx Vance, former Black Mesa scientists, and more, it is up to Dr. Freeman to stop the Combine and once again save the world. <a href="https://m.imdb.com/title/tt0374692/plotsummary/">(IMDb)</a>[Available on PC].</p>
+            <p>Developed by <a href="https://www.valvesoftware.com/en/">Valve Software</a></p>
+
+          </div>
+
+        <div class="card">
+            <h1>| POPULAR SIMULATOR |</h1>
+            <h5>[Jan 16, 2024]</h5>
+            <h2>STARDEW VALLEY</h2>
+            <a href="https://store.steampowered.com/app/413150/Stardew_Valley/"><img src="https://www.cnet.com/a/img/resize/67a40b69a7d0f8dda21fb49553efa0ee17914816/hub/2023/06/27/d99fe5c1-0f47-4319-82fb-db7a43daa815/stardew-valley-key-art-1200x675.png?auto=webp&fit=crop&height=900&width=1200" style="height:400px; width:600px";></a>
+            <p>About This Game:
+
+                Stardew Valley is an open-ended country-life RPG! You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home?. <a href="https://store.steampowered.com/app/413150/Stardew_Valley/">(Steam)</a>[Available on PC & Consoles].</p>
+            <p>Developed by <a href="https://www.youtube.com/@ConcernedApe">Concerned Ape</a></p>
+
+          </div>
+
+<div class="card">
+            <h1>| POPULAR ROGUELITE |</h1>
+            <h5>[Jan 17, 2024]</h5>
+            <h2>RISK OF RAIN 2</h2>
+            <a href="https://store.steampowered.com/app/632360/Risk_of_Rain_2/"><img src="https://assets-prd.ignimgs.com/2022/11/17/risk-of-rain-2-1668716311962.jpg" style="height:400px; width:600px";></a>
+            <p>About This Game:
+
+                Escape a chaotic alien planet by fighting through hordes of frenzied monsters – with your friends, or on your own. Combine loot in surprising ways and master each character until you become the havoc you feared upon your first crash landing. <a href="https://store.steampowered.com/app/632360/Risk_of_Rain_2/">(Steam)</a>[Available on PC & Consoles.]</p>
+            <p>Developed by <a href="https://hopoogames.com/">Hopoo Games</a></p>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>All games featured on Steam</h2>
+    <br>
+    
+    <br>
+          </div>
+    </div>
+
+        <!-- right side/column --> 
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Us</h2>
+
+              <a href="https://replit.com/@DanielMullaney/Group-Study-Project"><img src="images/COMPANY2.png"></a>
+            <p>Who are we?. We at SkrunkleCode are a gaming company originally founded in 2010, Our company finds the most popular games of each week and we put them all in one place so people and check them out or even experience them.</p>
+          </div>
+            <div class="card">
+                <h2 style=font-weight: bold;>| FEATURED |</h2>
+                <a href="https://store.steampowered.com/app/1240440/Halo_Infinite/"><img src= "https://upload.wikimedia.org/wikipedia/en/1/14/Halo_Infinite.png"></a>
+                <a href="https://store.steampowered.com/app/1966720/Lethal_Company/"><img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtNPgf6_QTuwbehkNRujKHWLGsk7NXbCq4NsEHZWxuEaPvGcUMHI6bK7tG2CgpjIWTtNc&usqp=CAU"style=width:280px></a>
+                  <a href="https://store.steampowered.com/app/42700/Call_of_Duty_Black_Ops/"><img src= "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/CoD_Black_Ops_cover.png/220px-CoD_Black_Ops_cover.png"style=width:280px;></a>
+                <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/"><img src="https://upload.wikimedia.org/wikipedia/en/1/12/Baldur%27s_Gate_3_cover_art.jpg"style=width:280px></a>
+                <a href="https://store.steampowered.com/app/220/HalfLife_2/"><img src="https://upload.wikimedia.org/wikipedia/en/2/25/Half-Life_2_cover.jpg"style=width:280px></a>
+                <a href="https://store.steampowered.com/app/1962660/Call_of_Duty_Modern_Warfare_II/"><img src="https://m.media-amazon.com/images/M/MV5BMjZjODM2MDMtMGE2ZS00NWIyLTkzOWMtYjY0YTM3MzQ0ZjMzXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg"style=width:280px></a>
+              </div>
+      <div class="card">
+        <h3>Developers</h3>
+        <p>Ava Jessup, Daniel Mullaney, Liam Robb, Ryan Booker</p>
+          <p>Courtice Secondary School</p>
+      </div>
+
+            <div class="card">
+                <h3>Notes</h3>
+                <p>All reviews are from various videos from creators on YouTube, all credit goes to the respective creators on YouTube.</p>
+                  <p>Courtice Secondary School</p>
+              </div>
+            <div class="card">
+                <h3>Gaming News Sources</h3>
+                <p><a href="https://www.gamespot.com/">Gamespot</a>
+                <br>
+                <a href="https://gamerant.com/">Gamerant</a>
+                    <br>
+                <a href="https://www.ign.com/ca">IGN</a>
+                    <br>
+                <a href="https://kotaku.com/">Kotaku</a></p>
+
+              </div>
+    </div>
+  </div>
+
+
+  <!-- bottom -->
+  <div class="footer">
+    <p>| Powered by Replit |</p>
+  </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+  
+</body>
+</html>
